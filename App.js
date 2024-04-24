@@ -1,6 +1,6 @@
-import { Text, View, SafeAreaView, Image } from 'react-native';
-import { BlueButton } from './src/components/BlueButton';
+import { SafeAreaView } from 'react-native';
 import { useFonts } from 'expo-font';
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,14 +20,6 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView className='flex-1 justify-center items-center bg-[#212121]'>
-      <View>
-        <Image
-          className='w-[200px] h-[200px]'
-          source={require('./src/assets/images/torch-logo.png')}
-        />
-        <BlueButton title={'Start'} onPress={log}/>
-      </View>
-    </SafeAreaView>
+
   );
 }
