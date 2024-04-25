@@ -1,4 +1,6 @@
 import { BlueButton } from '../components/BlueButton';
+import { View, Image } from 'react-native';
+import { GlobalStyles } from '../styles/GlobalStyles';
 
 const log = () => {
     console.log('Button pressed');
@@ -6,14 +8,12 @@ const log = () => {
 
 export default function Landing() {
     return (
-        <SafeAreaView className='flex-1 justify-center items-center bg-[#212121]'>
-            <View className=''>
-                <Image
-                    className='w-[200px] h-[200px]'
-                    source={require('../assets/images/torch-logo.png')}
-                />
-                <BlueButton title={'Start'} onPress={log}/>
-            </View>
-        </SafeAreaView>
+        <View style={GlobalStyles.centerView}>
+            <Image
+                className='w-[200px] h-[200px]'
+                source={require('../assets/images/torch-logo.png')}
+            />
+            <BlueButton title={'Start'} onPress={log}/>
+        </View>
     );
 }

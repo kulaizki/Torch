@@ -1,5 +1,5 @@
 import { TouchableOpacity, Text } from "react-native";
-import { OpenSans } from "../../theme";
+import { GlobalStyles, Colors } from "../styles/GlobalStyles";
 
 export const BlueButton = ({ title, onPress }) => {
     return (
