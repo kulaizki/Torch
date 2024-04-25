@@ -1,5 +1,7 @@
+import * as React from 'react';
 import { useFonts } from 'expo-font';
-import { SafeAreaView, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Landing from './src/screens/Landing';
 
 export default function App() {
@@ -11,19 +13,17 @@ export default function App() {
     'OpenSans-SemiBold': require('./src/assets/fonts/OpenSans-SemiBold.ttf'),
   })
 
-
   if (!fontsLoaded) {
     return undefined;
   }
 
+  const Stack = createNativeStackNavigator();
+
   return (
-    <SafeAreaView>
-      <Landing />
-      <Text style={{ fontFamily: 'OpenSans-Bold' }}>OpenSans-Bold</Text>
-      <Text style={{ fontFamily: 'OpenSans-Light' }}>OpenSans-Light</Text>
-      <Text style={{ fontFamily: 'OpenSans-Medium' }}>OpenSans-Medium</Text>
-      <Text style={{ fontFamily: 'OpenSans-Regular' }}>OpenSans-Regular</Text>
-      <Text style={{ fontFamily: 'OpenSans-SemiBold' }}>OpenSans-SemiBold</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Landing" component={Landing} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
