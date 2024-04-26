@@ -21,8 +21,10 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Landing" component={Landing} />
+      <Stack.Navigator
+        screenOptions={{headerShown: false}}
+      >
+        <Stack.Screen name="Landing" component={Landing}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

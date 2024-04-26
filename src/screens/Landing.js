@@ -8,13 +8,19 @@ const log = () => {
 
 export default function Landing() {
     return (
-        <View style={GlobalStyles.centerView}>
+        <View style={[GlobalStyles.centerView, styles.container]}>
             <Image
-                className='w-[200px] h-[200px]'
+                className='w-[240px] h-[240px]'
                 source={require('../assets/images/torch-logo.png')}
             />
-            <Text className='font-[OpenSans-Bold] text-4xl color-white' >Torch</Text>
+            <Text className='font-[OpenSans-Bold] text-5xl color-white' >Torch</Text>
             <BlueButton title={'Start'} onPress={log}/>
         </View>
     );
 }
+
+const styles = {
+    container: {
+        gap: 100,
+    },
+};

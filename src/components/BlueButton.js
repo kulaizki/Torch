@@ -6,7 +6,7 @@ export const BlueButton = ({ title, onPress }) => {
     button: {
       alignItems: 'center',
       backgroundColor: Colors.blue,  
-      paddingHorizontal: 40,
+      paddingHorizontal: 60,
       paddingVertical: 16,
       borderRadius: 8, 
     },
@@ -14,7 +14,7 @@ export const BlueButton = ({ title, onPress }) => {
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.button}>
-      <Text className='text-3xl color-white font-[OpenSans-SemiBold]'>{title}</Text>
+      <Text className='text-2xl color-white font-[OpenSans-SemiBold]'>{title}</Text>
     </TouchableOpacity>
   );
 };
