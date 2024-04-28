@@ -11,7 +11,6 @@ export const GlobalStyles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    // backgroundColor: Colors.dark,
   },
   centerTopView: {
     flex: 1,
