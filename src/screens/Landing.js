@@ -14,7 +14,7 @@ export default function Landing() {
                 source={require('../assets/images/torch-logo.png')}
             />
             <Text className='font-[OpenSans-Bold] text-5xl color-white' >Torch</Text>
-            <BlueButton title={'Start'} onPress={log}/>
+            <BlueButton title={'Start'} onPress={() => navigation.navigate('Explore')}/>
         </View>
     );
 }
