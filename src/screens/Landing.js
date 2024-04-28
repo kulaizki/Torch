@@ -6,7 +6,7 @@ const log = () => {
     console.log('Button pressed');
 }
 
-export default function Landing() {
+export default function Landing({ navigation }) {
     return (
         <View style={[GlobalStyles.centerView, styles.container]}>
             <Image

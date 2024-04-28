@@ -3,6 +3,7 @@ import { useFonts } from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Landing from './src/screens/Landing';
+import Explore from './src/screens/Explore';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,6 +24,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Landing" component={Landing}/>
+        <Stack.Screen name="Explore" component={Explore}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
