@@ -9,9 +9,9 @@ const log = () => {
 export default function Roadmap() {
     return (
         <SafeAreaView style={GlobalStyles.centerView}>
-        <View style={[GlobalStyles.centerView, styles.explore]}>
-            <Text className='font-[OpenSans-Bold] text-5xl color-white'>Roadmap</Text>
-        </View>
+            <View style={[GlobalStyles.centerView, styles.explore]}>
+                <Text className='font-[OpenSans-Bold] text-5xl color-white'>Roadmap</Text>
+            </View>
         </SafeAreaView>
     );
 }
