@@ -12,7 +12,12 @@ export default function Landing() {
         <SafeAreaView style={GlobalStyles.centerView}>
         <View style={[GlobalStyles.centerView, styles.explore]}>
             <Text className='font-[OpenSans-Bold] text-5xl color-white' >Explore</Text>
-            <Card title={'Roadmap'} onPress={log} />
+            <Card 
+                title={'Roadmap'} 
+                description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.'}
+                img={require('../assets/images/moriarty_young.png')}
+                onPress={log}
+            />
         </View>
         </SafeAreaView>
     );
