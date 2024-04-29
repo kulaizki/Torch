@@ -7,9 +7,9 @@ const log = () => {
     console.log('Button pressed');
 }
 
-export default function Landing() {
+export default function Explore({ navigation }) {
     return (
-        <SafeAreaView style={GlobalStyles.centerView}>
+        <SafeAreaView style={GlobalStyles.centerTopView}>
         <View style={[GlobalStyles.centerView, styles.explore]}>
             <Text className='font-[OpenSans-Bold] text-5xl color-white' >Explore</Text>
             <Card 

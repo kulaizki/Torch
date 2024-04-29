@@ -6,7 +6,7 @@ const log = () => {
     console.log('Button pressed');
 }
 
-export default function Roadmap() {
+export default function Roadmap({ navigation }) {
     return (
         <SafeAreaView style={GlobalStyles.centerView}>
             <View style={[GlobalStyles.centerView, styles.explore]}>
