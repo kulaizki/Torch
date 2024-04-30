@@ -1,7 +1,7 @@
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { BlueButton } from '../components/BlueButton';
 import { View, Image, Text } from 'react-native';
-import { GlobalStyles } from '../styles/GlobalStyles';
+import { GlobalStyles, Colors } from '../styles/GlobalStyles';
 
 const log = () => {
     console.log('Button pressed');
@@ -25,7 +25,7 @@ export default function Landing({ navigation }) {
 
 const styles = {
     landing: {
-        backgroundColor: '#212121',
+        backgroundColor: Colors.dark1,
         width: '100%', 
         gap: 100,
     },

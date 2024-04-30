@@ -1,5 +1,5 @@
 import { View, Image, Text } from 'react-native';
-import { GlobalStyles } from '../styles/GlobalStyles';
+import { GlobalStyles, Colors } from '../styles/GlobalStyles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const log = () => {
@@ -18,7 +18,7 @@ export default function Roadmap({ navigation }) {
 
 const styles = {
     roadmap: {
-        backgroundColor: '#212121',
+        backgroundColor: Colors.dark1,
         width: '100%',
         gap: 100,
     },
