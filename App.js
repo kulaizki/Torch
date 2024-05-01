@@ -25,6 +25,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Landing" component={Landing}/>
         <Stack.Screen name="Explore" component={Explore}/>
+        <Stack.Screen name="Roadmap" component={Explore}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
