@@ -1,6 +1,5 @@
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import { Colors } from "../styles/GlobalStyles";
-import { Image } from "react-native";
 
 export const Card = ({ title, description, img, onPress }) => {
   const styles = StyleSheet.create({
