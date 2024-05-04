@@ -8,7 +8,8 @@ export const Card = ({ title, description, img, onPress }) => {
       paddingHorizontal: 12,
       paddingVertical: 20,
       borderRadius: 8, 
-      gap: 8,
+      gap: 16,
+      marginBottom: 8,
     },
   });
 
