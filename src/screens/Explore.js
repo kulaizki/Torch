@@ -11,7 +11,7 @@ const log = () => {
 export default function Explore({ navigation }) {
     return (
         <SafeAreaView style={GlobalStyles.centerTopView}>
-        <View style={[GlobalStyles.centerView, styles.explore]}>
+        <View style={[GlobalStyles.centerView, styles.explore]} className='pb-4'>
             <Header />
             <Text className='font-[OpenSans-Bold] text-5xl color-white' >Explore</Text>
             <ScrollView style={styles.cardContainer}>
@@ -44,5 +44,9 @@ const styles = {
         backgroundColor: Colors.dark1,
         width: '100%',
         gap: 80,
+    },
+    cardContainer: {
+        width: '100%',
+        padding: 8,
     },
 };
