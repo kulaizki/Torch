@@ -3,10 +3,6 @@ import { BlueButton } from '../components/BlueButton';
 import { View, Image, Text } from 'react-native';
 import { GlobalStyles, Colors } from '../styles/GlobalStyles';
 
-const log = () => {
-    console.log('Button pressed');
-}
-
 export default function Landing({ navigation }) {
     return (
         <SafeAreaView style={GlobalStyles.centerView}>
@@ -25,7 +21,7 @@ export default function Landing({ navigation }) {
 
 const styles = {
     landing: {
-        backgroundColor: Colors.dark1,
+        backgroundColor: Colors.dark3,
         width: '100%', 
         gap: 100,
     },
