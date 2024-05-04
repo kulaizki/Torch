@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Landing from './src/screens/Landing';
 import Explore from './src/screens/Explore';
+import Roadmap from './src/screens/Roadmap';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,7 +26,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Landing" component={Landing}/>
         <Stack.Screen name="Explore" component={Explore}/>
-        <Stack.Screen name="Roadmap" component={Explore}/>
+        <Stack.Screen name="Roadmap" component={Roadmap}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
