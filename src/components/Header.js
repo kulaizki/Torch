@@ -2,13 +2,10 @@ import { Text, StyleSheet, Image, View } from "react-native";
 import { Colors } from "../styles/GlobalStyles";
 
 export const Header = () => {
-
-
   return (
       <View style={styles.Header}>
         <View style={styles.logoContainer}>
           <Image source={require('../assets/images/torch-logo.png')} className='h-16 w-16'/>
-          {/* <Text className='text-2xl color-black font-[OpenSans-SemiBold]'>Torch</Text> */}
         </View>
       </View>
   );
@@ -16,7 +13,7 @@ export const Header = () => {
 
 const styles = StyleSheet.create({
   Header: {
-    backgroundColor: Colors.dark1,
+    backgroundColor: Colors.dark3,
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
@@ -28,7 +25,8 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    borderBottomColor: Colors.orange,
+    borderRadius: 8,
+    borderBottomColor: Colors.orange  ,
     borderBottomWidth: 4,
     paddingBottom: 8,
   }
