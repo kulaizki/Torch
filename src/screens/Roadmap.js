@@ -1,26 +1,48 @@
-import { View, Image, Text } from 'react-native';
+import { View, Image, Text, ScrollView, Button } from 'react-native';
 import { GlobalStyles, Colors } from '../styles/GlobalStyles';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRoute } from '@react-navigation/native';
+import { BackButton } from '../components/BackButton';
 
 const log = () => {
     console.log('Button pressed');
 }
 
 export default function Roadmap({ navigation }) {
+    const route = useRoute(); 
+    const card  = route.params; 
+
     return (
         <SafeAreaView style={GlobalStyles.centerView}>
-            <View style={[GlobalStyles.centerView, styles.explore]}>
-                <Text className='font-[OpenSans-Bold] text-5xl color-white'>Roadmap</Text>
-            </View>
+            <View style={[GlobalStyles.centerView, styles.Roadmap]}>
+                <BackButton className='absolute' onPress={() => navigation.goBack()} />
+                <ScrollView style={styles.cardContainer}>
+                    <View style={styles.cardContent}>
+                        <Image
+                            className='w-[120px] h-[120px]'
+                            source={card?.img}
+                        />
+                        <Text className='font-[OpenSans-Bold] text-4xl color-white' >{card?.title}</Text>
+                        <Text className='font-[OpenSans-Light] text-2xl color-[#d2d2d2]' >{card?.description}</Text>
+                    </View>
+                </ScrollView> 
+            </View> 
         </SafeAreaView>
     );
 }
 
 const styles = {
-    roadmap: {
+    Roadmap: {
         backgroundColor: Colors.dark1,
         width: '100%',
-        gap: 100,
     },
+    cardContainer: {
+        width: '100%',
+        paddingHorizontal: 24,
+        paddingTop: 32,
+    },
+    cardContent: {
+        gap: 16,
+    }
 };
 
