@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 export const Colors = {
   dark1: '#212121',
   dark2: '#414141',
+  dark3: '#141414',
   subtext: '#9E9E9E',
   orange: '#FFA800',
   blue: '#3D5CFF',
