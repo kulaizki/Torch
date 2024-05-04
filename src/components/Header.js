@@ -2,20 +2,35 @@ import { Text, StyleSheet, Image, View } from "react-native";
 import { Colors } from "../styles/GlobalStyles";
 
 export const Header = () => {
-  const styles = StyleSheet.create({
-    Header: {
-      backgroundColor: Colors.orange,
-      height: 68,
-      width: '100%',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
+
 
   return (
       <View style={styles.Header}>
-        <Text className='text-2xl color-black font-[OpenSans-SemiBold]'>Torch</Text>
+        <View style={styles.logoContainer}>
+          <Image source={require('../assets/images/torch-logo.png')} className='h-16 w-16'/>
+          {/* <Text className='text-2xl color-black font-[OpenSans-SemiBold]'>Torch</Text> */}
+        </View>
       </View>
   );
 };
+
+const styles = StyleSheet.create({
+  Header: {
+    backgroundColor: Colors.dark1,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 16,
+  },
+  logoContainer: {
+    flexDirection: 'row',
+    gap: 8,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderBottomColor: Colors.orange,
+    borderBottomWidth: 4,
+    paddingBottom: 8,
+  }
+});
 
