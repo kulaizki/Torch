@@ -11,10 +11,10 @@ const log = () => {
 export default function Explore({ navigation }) {
     return (
         <SafeAreaView style={GlobalStyles.centerTopView}>
-        <View style={[GlobalStyles.centerView, styles.explore]} className='pb-4'>
-            <Header />
-            <Text className='font-[OpenSans-Bold] text-5xl color-white' >Explore</Text>
+        <View style={[GlobalStyles.centerView, styles.explore]}>
+            <Header className='absolute'/>
             <ScrollView style={styles.cardContainer}>
+                <Text className='font-[OpenSans-Bold] text-5xl color-white pt-16 pb-4' >Explore</Text>
                 <Card 
                     title={'Javascript Developer'} 
                     description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.'}
@@ -43,10 +43,9 @@ const styles = {
     explore: {
         backgroundColor: Colors.dark1,
         width: '100%',
-        gap: 80,
     },
     cardContainer: {
         width: '100%',
-        padding: 8,
+        padding: 8, 
     },
 };

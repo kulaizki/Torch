@@ -5,8 +5,7 @@ export const Header = () => {
   const styles = StyleSheet.create({
     Header: {
       backgroundColor: Colors.orange,
-      borderRadius: 8, 
-      height: 100,
+      height: 68,
       width: '100%',
       alignItems: 'center',
       justifyContent: 'center',
