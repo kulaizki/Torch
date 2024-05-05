@@ -5,9 +5,9 @@ import { Card } from '../components/Card';
 import { Header } from '../components/Header';
 
 const cards = [ 
-    { title: 'Javascript Developer', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum', img: require('../assets/images/js.png') },
-    { title: 'Python Developer', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum', img: require('../assets/images/python.png') },
-    { title: 'React Developer', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum', img: require('../assets/images/react.webp') },
+    { title: 'Javascript Developer', description: 'Master the fundamentals then delve into frameworks and libraries to become a well-rounded JavaScript developer.', img: require('../assets/images/js.png') },
+    { title: 'Python Developer', description: 'Build a strong foundation in Python syntax, data structures, and algorithms before exploring specialized libraries and frameworks for your desired development path.', img: require('../assets/images/python.png') },
+    { title: 'React Developer', description: 'Grasp core React concepts, hooks, and state management, then conquer popular libraries and tools to become a proficient React developer.', img: require('../assets/images/react.webp') },
   ];
 
 const log = () => {

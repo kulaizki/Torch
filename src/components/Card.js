@@ -2,16 +2,6 @@ import { TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import { Colors } from "../styles/GlobalStyles";
 
 export const Card = ({ title, description, img, onPress }) => {
-  const styles = StyleSheet.create({
-    card: {
-      backgroundColor: Colors.dark2,
-      paddingHorizontal: 12,
-      paddingVertical: 20,
-      borderRadius: 8, 
-      gap: 16,
-      marginBottom: 8,
-    },
-  });
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.card}>
@@ -21,3 +11,16 @@ export const Card = ({ title, description, img, onPress }) => {
     </TouchableOpacity>
   );
 };
+
+const styles = StyleSheet.create({
+  card: {
+    backgroundColor: Colors.dark2,
+    paddingHorizontal: 12,
+    paddingVertical: 20,
+    borderRadius: 8, 
+    gap: 16,
+    marginBottom: 8,
+    borderColor: Colors.orange,
+    borderWidth: 1,
+  },
+});

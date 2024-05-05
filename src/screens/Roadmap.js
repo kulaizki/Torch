@@ -23,7 +23,7 @@ export default function Roadmap({ navigation }) {
                             source={card?.img}
                         />
                         <Text className='font-[OpenSans-Bold] text-4xl color-white' >{card?.title}</Text>
-                        <Text className='font-[OpenSans-Light] text-2xl color-[#d2d2d2]' >{card?.description}</Text>
+                        <Text className='font-[OpenSans-Regular] text-lg color-[#d2d2d2]' >{card?.description}</Text>
                     </View>
                 </ScrollView> 
             </View> 
