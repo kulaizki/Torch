@@ -7,6 +7,7 @@ import Explore from './src/screens/Explore';
 import Roadmap from './src/screens/Roadmap';
 
 export default function App() {
+  
   const [fontsLoaded] = useFonts({
     'OpenSans-Bold': require('./src/assets/fonts/OpenSans-Bold.ttf'),
     'OpenSans-Light': require('./src/assets/fonts/OpenSans-Light.ttf'),

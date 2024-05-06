@@ -10,10 +10,6 @@ const cards = [
     { title: 'React Developer', description: 'Grasp core React concepts, hooks, and state management, then conquer popular libraries and tools to become a proficient React developer.', img: require('../assets/images/react.webp') },
   ];
 
-const log = () => {
-    console.log('Button pressed');
-}
-
 export default function Explore({ navigation }) {
     return (
         <SafeAreaView style={GlobalStyles.centerTopView}>

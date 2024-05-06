@@ -2,6 +2,7 @@ import { Text, StyleSheet, Image, View } from "react-native";
 import { Colors } from "../styles/GlobalStyles";
 
 export const Header = () => {
+  
   return (
       <View style={styles.Header}>
         <View style={styles.logoContainer}>

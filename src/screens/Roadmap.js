@@ -4,11 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRoute } from '@react-navigation/native';
 import { BackButton } from '../components/BackButton';
 
-const log = () => {
-    console.log('Button pressed');
-}
-
 export default function Roadmap({ navigation }) {
+    
     const route = useRoute(); 
     const card  = route.params; 
 
