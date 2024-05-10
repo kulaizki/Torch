@@ -11,6 +11,7 @@ const cards = [
   ];
 
 export default function Explore({ navigation }) {
+    
     return (
         <SafeAreaView style={GlobalStyles.centerTopView}>
             <View style={[GlobalStyles.centerView, styles.explore]}>

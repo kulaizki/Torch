@@ -4,6 +4,7 @@ import { View, Image, Text } from 'react-native';
 import { GlobalStyles, Colors } from '../styles/GlobalStyles';
 
 export default function Landing({ navigation }) {
+    
     return (
         <SafeAreaView style={GlobalStyles.centerView}>
             <View style={[GlobalStyles.centerView, styles.landing]}>
