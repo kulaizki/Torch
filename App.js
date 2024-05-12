@@ -5,8 +5,22 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Landing from './src/screens/Landing';
 import Explore from './src/screens/Explore';
 import Roadmap from './src/screens/Roadmap';
+import * as SQLite from 'expo-sqlite';
+import { useState, useEffect } from 'react';
+import { GlobalStyles } from './src/styles/GlobalStyles';
 
 export default function App() {
+
+  const db = SQLite.openDatabase('db.db');
+  const [isLoading, setIsLoading] = useState(true);
+
+  if (isLoading) {
+    return (
+      <View style={GlobalStyles.centerView}>
+        <Text>Loading...</Text>
+      </View>
+    )
+  }
   
   const [fontsLoaded] = useFonts({
     'OpenSans-Bold': require('./src/assets/fonts/OpenSans-Bold.ttf'),
