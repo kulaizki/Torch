@@ -8,6 +8,7 @@ import Roadmap from './src/screens/Roadmap';
 import * as SQLite from 'expo-sqlite';
 import { useState, useEffect } from 'react';
 import { GlobalStyles } from './src/styles/GlobalStyles';
+import { View, Text } from 'react-native';
 
 export default function App() {
 
