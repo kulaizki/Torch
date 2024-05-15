@@ -5,7 +5,6 @@ import { Card } from '../components/Card';
 import { Header } from '../components/Header';
 import { Cards } from '../../data';
 
-
 export default function Explore({ navigation }) {
     
     return (
