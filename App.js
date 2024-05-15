@@ -15,13 +15,13 @@ export default function App() {
   const db = SQLite.openDatabase('db.db');
   const [isLoading, setIsLoading] = useState(true);
 
-  if (isLoading) {
-    return (
-      <View style={GlobalStyles.centerView}>
-        <Text>Loading...</Text>
-      </View>
-    )
-  }
+  // if (isLoading) {
+  //   return (
+  //     <View style={GlobalStyles.centerView}>
+  //       <Text>Loading...</Text>
+  //     </View>
+  //   )
+  // }
   
   const [fontsLoaded] = useFonts({
     'OpenSans-Bold': require('./src/assets/fonts/OpenSans-Bold.ttf'),
