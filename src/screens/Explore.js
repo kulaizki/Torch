@@ -1,4 +1,4 @@
-import { View, Image, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import { GlobalStyles, Colors } from '../styles/GlobalStyles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Card } from '../components/Card';
