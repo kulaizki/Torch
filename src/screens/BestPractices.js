@@ -28,12 +28,12 @@ const styles = {
         backgroundColor: Colors.dark1,
         width: '100%',
     },
-    cardContainer: {
+    Container: {
         width: '100%',
         paddingHorizontal: 24,
         paddingTop: 32,
     },
-    cardContent: {
+    Content: {
         gap: 16,
     }
 };
