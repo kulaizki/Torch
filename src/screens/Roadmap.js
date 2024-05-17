@@ -3,6 +3,7 @@ import { GlobalStyles, Colors } from '../styles/GlobalStyles';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRoute } from '@react-navigation/native';
 import { BackButton } from '../components/BackButton';
+import { SubCardsContainer } from '../components/SubCardsContainer';
 
 export default function Roadmap({ navigation }) {
     
@@ -21,9 +22,8 @@ export default function Roadmap({ navigation }) {
                         />
                         <Text className='font-[OpenSans-Bold] text-4xl color-white' >{card?.title}</Text>
                         <Text className='font-[OpenSans-Regular] text-lg color-[#d2d2d2]' >{card?.description}</Text>
-                        {/* we turn this to subcards */}
+                        <SubCardsContainer />
                     </View>
-
                 </ScrollView> 
             </View> 
         </SafeAreaView>
