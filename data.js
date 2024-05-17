@@ -6,4 +6,10 @@ export const Cards = [
     { title: 'Cybersec Engineer', description: 'description', img: require('./src/assets/images/js.png') },
 ];
 
-export const JavaScript = 
+// export const SubCards = [
+
+// ]
+
+// export const JavaScriptSub = [
+    
+// ]
