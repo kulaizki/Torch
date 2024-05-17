@@ -6,13 +6,18 @@ export const SubCard = ({ title, img, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress} style={styles.SubCard}>
         <Image source={img} className='w-[80px] h-[80px] rounded-md' />
-        <Text className='text-xl color-white font-[OpenSans-SemiBold]'>{title}</Text>
+        <Text className='text-base color-white font-[OpenSans-SemiBold]'>{title}</Text>
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   SubCard: {
+    width: 140,
+    backgroundColor: Colors.dark1,
+    paddingHorizontal: 12,
+    paddingVertical: 20,
+    borderRadius: 8, 
     alignItems: 'center',
     gap: 8,
   },

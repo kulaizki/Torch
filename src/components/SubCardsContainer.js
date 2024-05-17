@@ -17,11 +17,12 @@ export const SubCardsContainer = ({ nav }) => {
 const styles = StyleSheet.create({
   SubCardsContainer: {
     marginTop: 16,
+    marginBottom: 60,
     backgroundColor: Colors.dark2,
     paddingHorizontal: 12,
     paddingVertical: 20,
     borderRadius: 8, 
-    gap: 16,
+    gap: 20,
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
