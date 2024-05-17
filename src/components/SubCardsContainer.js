@@ -16,7 +16,7 @@ export const SubCardsContainer = ({ nav }) => {
 
 const styles = StyleSheet.create({
   SubCardsContainer: {
-    marginTop: 16,
+    marginTop: 16,  
     marginBottom: 60,
     backgroundColor: Colors.dark2,
     paddingHorizontal: 12,
