@@ -1,10 +1,10 @@
 import { TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import { Colors } from "../styles/GlobalStyles";
 
-export const SubCard = ({ title, img, onPress }) => {
+export const SubCard = ({ title, img, nav }) => {
 
   return (
-    <TouchableOpacity onPress={onPress} style={styles.SubCard}>
+    <TouchableOpacity onPress={nav} style={styles.SubCard}>
         <Image source={img} className='w-[80px] h-[80px] rounded-md' />
         <Text className='text-base color-white font-[OpenSans-SemiBold]'>{title}</Text>
     </TouchableOpacity>
