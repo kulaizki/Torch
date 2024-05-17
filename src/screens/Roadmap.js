@@ -22,6 +22,16 @@ export default function Roadmap({ navigation }) {
                         <Text className='font-[OpenSans-Bold] text-4xl color-white' >{card?.title}</Text>
                         <Text className='font-[OpenSans-Regular] text-lg color-[#d2d2d2]' >{card?.description}</Text>
                     </View>
+                    {/* we turn this to subcards */}
+                    {/* {Cards.map((card) => (
+                        <Card
+                        key={card.title} 
+                        title={card.title}
+                        description={card.description}
+                        img={card.img}
+                        onPress={() => navigation.navigate('Roadmap', card)} 
+                        />
+                    ))} */}
                 </ScrollView> 
             </View> 
         </SafeAreaView>
