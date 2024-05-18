@@ -2,11 +2,12 @@ import { TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import { Colors } from "../styles/GlobalStyles";
 
 export const SubCard = ({ title, img, nav }) => {
-
   return (
     <TouchableOpacity onPress={nav} style={styles.SubCard}>
-        <Image source={img} className='w-[80px] h-[80px] rounded-md' />
-        <Text className='text-base color-white font-[OpenSans-SemiBold]'>{title}</Text>
+      <Image source={img} className="w-[80px] h-[80px] rounded-md" />
+      <Text className="text-base color-white font-[OpenSans-SemiBold]">
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 };
@@ -17,9 +18,8 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.dark1,
     paddingHorizontal: 12,
     paddingVertical: 20,
-    borderRadius: 8, 
-    alignItems: 'center',
+    borderRadius: 8,
+    alignItems: "center",
     gap: 8,
   },
 });
-
