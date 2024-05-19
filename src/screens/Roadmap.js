@@ -1,16 +1,17 @@
-import { View, Image, Text, ScrollView } from "react-native";
+import { View, Image, Text, ScrollView, Button } from "react-native";
 import { GlobalStyles, Colors } from "../styles/GlobalStyles";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRoute } from "@react-navigation/native";
 import { BackButton } from "../components/BackButton";
-import { SubCardsContainer } from "../components/SubCardsContainer";
+import { DescriptionCards, SubCards } from "../../data";
+import { TouchableOpacity } from "react-native";
 
 export default function Roadmap({ navigation }) {
   const route = useRoute();
   const card = route.params;
 
-  function nav(name, subcard) {
-    navigation.navigate(name, subcard);
+  function nav(name) {
+    navigation.navigate(name, card.title);
   }
 
   return (
@@ -26,7 +27,21 @@ export default function Roadmap({ navigation }) {
             <Text className="font-[OpenSans-Regular] text-lg color-[#d2d2d2]">
               {card?.description}
             </Text>
-            <SubCardsContainer nav={nav} />
+            {/* <SubCardsContainer navigation={navigation} /> */}
+            <View style={styles.SubCardsContainer}>
+            {SubCards.map((subcard) => (
+              <TouchableOpacity 
+                key={subcard.title} 
+                style={styles.subCardButton} // Define styles for button appearance
+                onPress={() => nav(subcard.title, subcard)}
+              >
+                <View style={styles.buttonContent}>
+                  <Image source={subcard.img} style={styles.buttonImage} />
+                  <Text style={styles.buttonText}>{subcard.title}</Text>
+                </View>
+              </TouchableOpacity>
+            ))}
+            </View>
           </View>
         </ScrollView>
       </View>
@@ -47,4 +62,22 @@ const styles = {
   cardContent: {
     gap: 16,
   },
+  SubCardsContainer: {
+    marginTop: 16,
+    marginBottom: 60,
+    backgroundColor: Colors.dark2,
+    paddingHorizontal: 12,
+    paddingVertical: 20,
+    borderRadius: 8,
+    gap: 20,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
+  },
+  buttonImage: {
+    width: 100,
+    height: 100,
+    paddingHorizontal: 12,
+    paddingVertical: 20,
+  }
 };

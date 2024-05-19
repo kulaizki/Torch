@@ -52,6 +52,41 @@ export const SubCards = [
   },
 ];
 
-// export const JavaScriptSub = [
+export const DescriptionCards = [
+  {
+    title: "JavaScript Developer",
+    fundamentals: "how to java fundameoafjnws?",
+    technology: "java tech",
+    bestPractices: "just do it",
+    projects: "make landing page",
+  },
 
-// ]
+  {
+    title: "Python Developer",
+    fundamentals: "how to pie thon? fundameoafjnws?",
+    technology: "python snake technology",
+    bestPractices: "just do it",
+    projects: "make landing page",
+  },
+  {
+    title: "React Developer",
+    fundamentals: "how to react lmao fundameoafjnws?",
+    technology: "technolgosdhos",
+    bestPractices: "just do it",
+    projects: "make landing page",
+  },
+  {
+    title: "Game Developer",
+    fundamentals: "how to make valorant ezpz fundameoafjnws?",
+    technology: "technolgosdhos",
+    bestPractices: "just do it",
+    projects: "make landing page",
+  },
+  {
+    title: "Cybersecurity",
+    fundamentals: "how to heck fundameoafjnws?",
+    technology: "technolgosdhos",
+    bestPractices: "just do it",
+    projects: "make secure website",
+  },
+]

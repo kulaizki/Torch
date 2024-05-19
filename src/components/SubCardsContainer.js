@@ -3,21 +3,25 @@ import { Colors } from "../styles/GlobalStyles";
 import { SubCard } from "./SubCard";
 import { SubCards } from "../../data";
 
-export const SubCardsContainer = ({ nav }) => {
+export const SubCardsContainer = ({ navigation }) => {
   // function navigate(name, subcard) {
-  //   nav(name, subcard);
+  //   navigation.navigate(name, subcard);
   // }
+
+  const pressHandler = (title) => {
+    navigation.navigate(title);
+  }
 
   return (
     <View style={styles.SubCardsContainer}>
       {SubCards.map((subcard) => (
-        <SubCard key={subcard.title} title={subcard.title} img={subcard.img} />
-      ))}
-
-      {/* <SubCard title='Fundamentals' img={require('../assets/images/js.png')} onPress={nav} />
-      <SubCard title='Technology' img={require('../assets/images/js.png')} onPress={nav} />
-      <SubCard title='Best Practices' img={require('../assets/images/js.png')} onPress={nav} />
-      <SubCard title='Projects' img={require('../assets/images/js.png')} onPress={nav} /> */}
+        <SubCard 
+          key={subcard.title} 
+          title={subcard.title} 
+          img={subcard.img} 
+          onPress={() => pressHandler(subcard.title)}
+          />
+        ))}
     </View>
   );
 };

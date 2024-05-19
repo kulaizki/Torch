@@ -3,10 +3,13 @@ import { GlobalStyles, Colors } from "../styles/GlobalStyles";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRoute } from "@react-navigation/native";
 import { BackButton } from "../components/BackButton";
+import { DescriptionCards } from "../../data";
+import { TouchableOpacity } from "react-native";
 
 export default function Fundamentals({ navigation }) {
   const route = useRoute();
-  const card = route.params;
+  const cardTitle = route.params;
+  const matchingCard = DescriptionCards.find((card) => card.title === cardTitle);
 
   return (
     <SafeAreaView style={GlobalStyles.centerView}>
@@ -14,11 +17,8 @@ export default function Fundamentals({ navigation }) {
         <BackButton className="absolute" onPress={() => navigation.goBack()} />
         <ScrollView style={styles.Container}>
           <View style={styles.Content}>
-            <Text className="font-[OpenSans-Bold] text-5xl color-white pt-16 pb-4">
-              Explore
-            </Text>
             <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">
-              Choose your path.
+              {matchingCard.fundamentals}
             </Text>
           </View>
         </ScrollView>

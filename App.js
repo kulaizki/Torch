@@ -13,6 +13,8 @@ import * as SQLite from "expo-sqlite";
 import { useState, useEffect } from "react";
 import { GlobalStyles } from "./src/styles/GlobalStyles";
 import { View, Text } from "react-native";
+import { SubCard } from "./src/components/SubCard";
+import { SubCardsContainer } from "./src/components/SubCardsContainer";
 
 export default function App() {
   const db = SQLite.openDatabase("db.db");
@@ -50,6 +52,7 @@ export default function App() {
         <Stack.Screen name="Best Practices" component={BestPractices} />
         <Stack.Screen name="Technology" component={Technology} />
         <Stack.Screen name="Projects" component={Projects} />
+        <Stack.Screen name="SubCardsContainer" component={SubCardsContainer} />
       </Stack.Navigator>
     </NavigationContainer>
   );
