@@ -9,7 +9,9 @@ import { TouchableOpacity } from "react-native";
 export default function Fundamentals({ navigation }) {
   const route = useRoute();
   const cardTitle = route.params;
-  const matchingCard = DescriptionCards.find((card) => card.title === cardTitle);
+  const matchingCard = DescriptionCards.find(
+    (card) => card.title === cardTitle
+  );
 
   return (
     <SafeAreaView style={GlobalStyles.centerView}>
@@ -17,8 +19,11 @@ export default function Fundamentals({ navigation }) {
         <BackButton className="absolute" onPress={() => navigation.goBack()} />
         <ScrollView style={styles.Container}>
           <View style={styles.Content}>
+            <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
+              {matchingCard.bestPractices.descTitle}
+            </Text>
             <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">
-              {matchingCard.bestPractices}
+              {matchingCard.bestPractices.body}
             </Text>
           </View>
         </ScrollView>

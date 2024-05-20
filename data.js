@@ -55,38 +55,98 @@ export const SubCards = [
 export const DescriptionCards = [
   {
     title: "JavaScript Developer",
-    fundamentals: "how to java fundameoafjnws?",
-    technology: "java tech",
-    bestPractices: "just do it",
-    projects: "make landing page",
+    fundamentals: {
+      descTitle: "how to java fundameoafjnws?",
+      body: "java fundamental blablabla",
+    },
+    technology: {
+      descTitle: "java tech",
+      body: "java tech adasd",
+    },
+    bestPractices: {
+      descTitle: "just do it",
+      body: "sponsored by nike",
+    },
+    projects: {
+      descTitle: "meowmeowmeow",
+      body: "make landing page lol",
+    },
   },
 
   {
     title: "Python Developer",
-    fundamentals: "how to pie thon? fundameoafjnws?",
-    technology: "python snake technology",
-    bestPractices: "just do it",
-    projects: "make landing page",
+    fundamentals: {
+      descTitle: "Introduction to the Various Types of Snakes",
+      body: "1. Python",
+    },
+    technology: {
+      descTitle: "snake oooooooooooo",
+      body: "run from the snakeeee",
+    },
+    bestPractices: {
+      descTitle: "get owned idiot",
+      body: "code in C instead",
+    },
+    projects: {
+      descTitle: "machine learning",
+      body: "recreate chatgpt 4.0",
+    },
   },
   {
     title: "React Developer",
-    fundamentals: "how to react lmao fundameoafjnws?",
-    technology: "technolgosdhos",
-    bestPractices: "just do it",
-    projects: "make landing page",
+    fundamentals: {
+      descTitle: "how to react fundameoafjnws?",
+      body: "react fundamental blablabla",
+    },
+    technology: {
+      descTitle: "react tech",
+      body: "react tech adasd",
+    },
+    bestPractices: {
+      descTitle: "flight reacts",
+      body: "sponsored by tiktok",
+    },
+    projects: {
+      descTitle: "make website",
+      body: "nah nvm lmao",
+    },
   },
   {
     title: "Game Developer",
-    fundamentals: "how to make valorant ezpz fundameoafjnws?",
-    technology: "technolgosdhos",
-    bestPractices: "just do it",
-    projects: "make landing page",
+    fundamentals: {
+      descTitle: "creating minecraft lmao",
+      body: "jk we are creating valorant",
+    },
+    technology: {
+      descTitle: "how to make rtx for free",
+      body: "buy it for 200000 php",
+    },
+    bestPractices: {
+      descTitle: "how to uninstall league of legends",
+      body: "[REDACTED]",
+    },
+    projects: {
+      descTitle: "iron golem farm minecraft",
+      body: "step 1: lure 3 villagers",
+    },
   },
   {
     title: "Cybersecurity",
-    fundamentals: "how to heck fundameoafjnws?",
-    technology: "technolgosdhos",
-    bestPractices: "just do it",
-    projects: "make secure website",
+    fundamentals: {
+      descTitle: "how to protect urself online",
+      body: "dont go online",
+    },
+    technology: {
+      descTitle: "tech condoms",
+      body: "it will protect you",
+    },
+    bestPractices: {
+      descTitle: "dont be careless online",
+      body: "give me your bank account info for more",
+    },
+    projects: {
+      descTitle: "how to hack the United States Governmennt",
+      body: "do it yourself",
+    },
   },
-]
+];
