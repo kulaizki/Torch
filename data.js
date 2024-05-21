@@ -56,8 +56,25 @@ export const DescriptionCards = [
   {
     title: "JavaScript Developer",
     fundamentals: {
-      descTitle: "how to java fundameoafjnws?",
-      body: "java fundamental blablabla",
+      descTitle: "Fundamentals in Javascript",
+      body: "JavaScript is a versatile and widely-used programming language that is fundamental to modern web development. Understanding the core concepts of JavaScript is essential for creating dynamic and interactive web applications. Here are the three most important fundamentals of JavaScript:",
+      bullets: [
+        {
+          bTitle: "Variables and Data Types",
+          bBody:
+            "Variables are used to store data values, and JavaScript supports various data types such as numbers, strings, booleans, objects, and arrays. Mastering how to declare, initialize, and manipulate variables is crucial for any JavaScript programmer. The let, const, and var keywords are used for variable declaration, each with its own scope and usage rules.",
+        },
+        {
+          bTitle: "Functions",
+          bBody:
+            "Functions are blocks of code designed to perform specific tasks. They are one of the building blocks of JavaScript, enabling code reusability and modularity. Functions can be declared using function declarations, function expressions, or arrow functions. Understanding how to pass arguments to functions and return values is essential for efficient programming.",
+        },
+        {
+          bTitle: "Control Structures",
+          bBody:
+            "Control structures such as loops and conditionals allow developers to control the flow of the program. Conditionals (if, else if, else, switch) enable decision-making in code, while loops (for, while, do...while) facilitate repeated execution of code blocks. Mastering these structures is vital for handling complex logic and iterations in applications.",
+        },
+      ],
     },
     technology: {
       descTitle: "java tech",

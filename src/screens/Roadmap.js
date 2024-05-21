@@ -29,18 +29,18 @@ export default function Roadmap({ navigation }) {
             </Text>
             {/* <SubCardsContainer navigation={navigation} /> */}
             <View style={styles.SubCardsContainer}>
-            {SubCards.map((subcard) => (
-              <TouchableOpacity 
-                key={subcard.title} 
-                style={styles.subCardButton} // Define styles for button appearance
-                onPress={() => nav(subcard.title, subcard)}
-              >
-                <View style={styles.buttonContent}>
-                  <Image source={subcard.img} style={styles.buttonImage} />
-                  <Text style={styles.buttonText}>{subcard.title}</Text>
-                </View>
-              </TouchableOpacity>
-            ))}
+              {SubCards.map((subcard) => (
+                <TouchableOpacity
+                  key={subcard.title}
+                  style={styles.subCardButton} // Define styles for button appearance
+                  onPress={() => nav(subcard.title, subcard)}
+                >
+                  <View style={styles.buttonContent}>
+                    <Image source={subcard.img} style={styles.buttonImage} />
+                    <Text style={styles.buttonText}>{subcard.title}</Text>
+                  </View>
+                </TouchableOpacity>
+              ))}
             </View>
           </View>
         </ScrollView>
@@ -79,5 +79,5 @@ const styles = {
     height: 100,
     paddingHorizontal: 12,
     paddingVertical: 20,
-  }
+  },
 };
