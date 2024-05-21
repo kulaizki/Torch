@@ -24,7 +24,7 @@ export default function Fundamentals({ navigation }) {
               source={matchingCard.fundamentals.image}
               style={GlobalStyles.articleImage}
             />
-            <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
+            <Text className="text-4xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.fundamentals.descTitle}
             </Text>
             <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">

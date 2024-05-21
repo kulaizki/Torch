@@ -24,7 +24,7 @@ export default function Fundamentals({ navigation }) {
               source={matchingCard.projects.image}
               style={GlobalStyles.articleImage}
             />
-            <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
+            <Text className="text-4xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.projects.descTitle}
             </Text>
             <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">
@@ -33,7 +33,7 @@ export default function Fundamentals({ navigation }) {
             <View style={styles.BulletList}>
               <BulletList bulletList={matchingCard.projects.body.subBullet} />
             </View>
-            <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
+            <Text className="text-4xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.projects.body.subTitle}
             </Text>
             {matchingCard.projects.body.project.map((projects) => (

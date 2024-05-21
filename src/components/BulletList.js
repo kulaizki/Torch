@@ -7,10 +7,10 @@ export const BulletList = ({ bulletList }) => {
       {bulletList.map((item, index) => (
         <View style={styles.li} key={index}>
           <View style={styles.liContent}>
-            <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
+            <Text className="text-3xl color-white font-[OpenSans-SemiBold]">
               {item.bTitle}
             </Text>
-            <Text className="font-[OpenSans-Light] color-[#d2d2d2] pb-8">
+            <Text className="font-[OpenSans-Light] color-[#d2d2d2] text-lg pb-8">
               {item.bBody}
             </Text>
           </View>
