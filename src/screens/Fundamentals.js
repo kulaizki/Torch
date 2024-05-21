@@ -27,7 +27,7 @@ export default function Fundamentals({ navigation }) {
             <Text className="text-4xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.fundamentals.descTitle}
             </Text>
-            <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">
+            <Text className="font-[OpenSans-Light] text-lg color-[#d2d2d2] pb-8">
               {matchingCard.fundamentals.body.introduction}
             </Text>
             <View style={styles.BulletList}>

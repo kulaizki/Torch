@@ -33,4 +33,7 @@ const styles = StyleSheet.create({
   Content: {
     gap: 16,
   },
+  liContent: {
+    gap: 16,
+  },
 });
