@@ -22,7 +22,7 @@ export default function Fundamentals({ navigation }) {
           <View style={styles.Content}>
             <Image
               source={matchingCard.technology.image}
-              style={styles.image}
+              style={GlobalStyles.articleImage}
             />
             <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.technology.descTitle}
@@ -34,7 +34,7 @@ export default function Fundamentals({ navigation }) {
               {matchingCard.technology.body.subTitle}
             </Text>
             {matchingCard.technology.body.technologies.map((technology) => (
-              <View style={styles.Content}>
+              <View style={styles.Content} key={technology.subTitle}>
                 <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
                   {technology.subTitle}
                 </Text>

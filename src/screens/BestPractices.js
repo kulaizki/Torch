@@ -5,6 +5,7 @@ import { useRoute } from "@react-navigation/native";
 import { BackButton } from "../components/BackButton";
 import { DescriptionCards } from "../../data";
 import { TouchableOpacity } from "react-native";
+import { BulletList } from "../components/BulletList";
 
 export default function Fundamentals({ navigation }) {
   const route = useRoute();
@@ -19,12 +20,29 @@ export default function Fundamentals({ navigation }) {
         <BackButton className="absolute" onPress={() => navigation.goBack()} />
         <ScrollView style={styles.Container}>
           <View style={styles.Content}>
-            <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
+            <Image
+              source={matchingCard.bestPractices.image}
+              style={GlobalStyles.articleImage}
+            />
+            <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.bestPractices.descTitle}
             </Text>
             <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">
-              {matchingCard.bestPractices.body}
+              {matchingCard.bestPractices.body.introduction}
             </Text>
+            <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
+              {matchingCard.bestPractices.body.subTitle}
+            </Text>
+            {matchingCard.bestPractices.body.practices.map((bestPractices) => (
+              <View style={styles.Content} key={bestPractices.subTitle}>
+                <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
+                  {bestPractices.subTitle}
+                </Text>
+                <View style={styles.BulletList}>
+                  <BulletList bulletList={bestPractices.bullets} />
+                </View>
+              </View>
+            ))}
           </View>
         </ScrollView>
       </View>

@@ -8,7 +8,7 @@ export const BulletList = ({ bulletList }) => {
         <View style={styles.li} key={index}>
           <View style={styles.liContent}>
             <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
-              • {item.bTitle}
+              {item.bTitle}
             </Text>
             <Text className="font-[OpenSans-Light] color-[#d2d2d2] pb-8">
               {item.bBody}

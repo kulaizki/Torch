@@ -22,7 +22,7 @@ export default function Fundamentals({ navigation }) {
           <View style={styles.Content}>
             <Image
               source={matchingCard.fundamentals.image}
-              style={styles.image}
+              style={GlobalStyles.articleImage}
             />
             <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.fundamentals.descTitle}
