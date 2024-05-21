@@ -37,7 +37,7 @@ export default function Roadmap({ navigation }) {
                 >
                   <View style={styles.buttonContent}>
                     <Image source={subcard.img} style={styles.buttonImage} />
-                    <Text style={styles.buttonText}>{subcard.title}</Text>
+                    <Text className="font-[OpenSans-Regular] text-lg color-[#FFFFFF]">{subcard.title}</Text>
                   </View>
                 </TouchableOpacity>
               ))}
@@ -63,10 +63,8 @@ const styles = {
     gap: 16,
   },
   SubCardsContainer: {
-    marginTop: 16,
     marginBottom: 60,
     backgroundColor: Colors.dark2,
-    paddingHorizontal: 12,
     paddingVertical: 20,
     borderRadius: 8,
     gap: 20,
@@ -77,7 +75,17 @@ const styles = {
   buttonImage: {
     width: 100,
     height: 100,
-    paddingHorizontal: 12,
-    paddingVertical: 20,
+  },
+  buttonText: {
+    color: "white",
+  },
+  buttonContent: {
+    alignItems: "center",
+    backgroundColor: Colors.dark1,
+    width: 150,
+    height: 160,
+    justifyContent: "center",
+    borderRadius: 8,
+    gap: 4,
   },
 };
