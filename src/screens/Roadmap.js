@@ -75,6 +75,7 @@ const styles = {
   buttonImage: {
     width: 100,
     height: 100,
+    borderRadius: 4,
   },
   buttonText: {
     color: "white",
