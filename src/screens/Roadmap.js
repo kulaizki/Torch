@@ -37,7 +37,7 @@ export default function Roadmap({ navigation }) {
                 >
                   <View style={styles.buttonContent}>
                     <Image source={subcard.img} style={styles.buttonImage} />
-                    <Text style={styles.buttonText}>{subcard.title}</Text>
+                    <Text classname="color-white">{subcard.title}</Text>
                   </View>
                 </TouchableOpacity>
               ))}

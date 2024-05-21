@@ -20,14 +20,18 @@ export default function Fundamentals({ navigation }) {
         <BackButton className="absolute" onPress={() => navigation.goBack()} />
         <ScrollView style={styles.Container}>
           <View style={styles.Content}>
+            <Image
+              source={matchingCard.fundamentals.image}
+              style={styles.image}
+            />
             <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.fundamentals.descTitle}
             </Text>
             <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">
-              {matchingCard.fundamentals.body}
+              {matchingCard.fundamentals.body.introduction}
             </Text>
             <View style={styles.BulletList}>
-              <BulletList bulletList={matchingCard.fundamentals.bullets} />
+              <BulletList bulletList={matchingCard.fundamentals.body.bullets} />
             </View>
           </View>
         </ScrollView>
@@ -48,5 +52,10 @@ const styles = {
   },
   Content: {
     gap: 16,
+  },
+  image: {
+    width: "100%",
+    flex: 1,
+    resizeMode: "contain",
   },
 };

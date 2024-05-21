@@ -5,6 +5,7 @@ import { useRoute } from "@react-navigation/native";
 import { BackButton } from "../components/BackButton";
 import { DescriptionCards } from "../../data";
 import { TouchableOpacity } from "react-native";
+import { BulletList } from "../components/BulletList";
 
 export default function Fundamentals({ navigation }) {
   const route = useRoute();
@@ -19,12 +20,29 @@ export default function Fundamentals({ navigation }) {
         <BackButton className="absolute" onPress={() => navigation.goBack()} />
         <ScrollView style={styles.Container}>
           <View style={styles.Content}>
-            <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
+            <Image
+              source={matchingCard.technology.image}
+              style={styles.image}
+            />
+            <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
               {matchingCard.technology.descTitle}
             </Text>
             <Text className="font-[OpenSans-Light] text-2xl color-[#d2d2d2] pb-8">
-              {matchingCard.technology.body}
+              {matchingCard.technology.body.introduction}
             </Text>
+            <Text className="text-5xl color-white font-[OpenSans-SemiBold]">
+              {matchingCard.technology.body.subTitle}
+            </Text>
+            {matchingCard.technology.body.technologies.map((technology) => (
+              <View style={styles.Content}>
+                <Text className="text-2xl color-white font-[OpenSans-SemiBold]">
+                  {technology.subTitle}
+                </Text>
+                <View style={styles.BulletList}>
+                  <BulletList bulletList={technology.bullets} />
+                </View>
+              </View>
+            ))}
           </View>
         </ScrollView>
       </View>
@@ -44,5 +62,10 @@ const styles = {
   },
   Content: {
     gap: 16,
+  },
+  image: {
+    width: "100%",
+    flex: 1,
+    resizeMode: "contain",
   },
 };
