@@ -25,30 +25,30 @@ export const Cards = [
   },
   {
     title: "Cybersecurity",
-    description: "description",
-    img: require("./src/assets/images/js.png"),
+    description: "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks. It's like building a fortress around your information to keep it safe from harm. This includes protecting against things like malware, hackers, and data breaches.",
+    img: require("./src/assets/images/cybersecurity.png"),
   },
 ];
 
 export const SubCards = [
   {
     title: "Fundamentals",
-    img: require("./src/assets/images/js.png"),
+    img: require("./src/assets/images/fundamentals.png"),
   },
 
   {
     title: "Technology",
-    img: require("./src/assets/images/js.png"),
+    img: require("./src/assets/images/technology.png"),
   },
 
   {
     title: "Best Practices",
-    img: require("./src/assets/images/js.png"),
+    img: require("./src/assets/images/bestpractices.png"),
   },
 
   {
     title: "Projects",
-    img: require("./src/assets/images/js.png"),
+    img: require("./src/assets/images/projects.png"),
   },
 ];
 
@@ -1116,7 +1116,7 @@ export const DescriptionCards = [
     title: "Cybersecurity",
     fundamentals: {
       descTitle: "Essential Cybersecurity Concepts",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/cyber-fundamentals.png"),
       body: {
         introduction:
           "Cybersecurity is the practice of protecting computer systems, networks, and data from unauthorized access, use, disclosure, disruption, modification, or destruction. Here are some fundamental concepts to understand the core principles of cybersecurity:",
@@ -1141,7 +1141,7 @@ export const DescriptionCards = [
     },
     technology: {
       descTitle: "Cybersecurity Tools and Technologies",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/cyber-technology.png"),
       body: {
         introduction:
           "The ever-evolving threat landscape necessitates the continuous development and implementation of robust cybersecurity tools and technologies. These tools play a vital role in protecting systems, networks, and data from cyberattacks. Here's an overview of some key categories of cybersecurity technologies:",
@@ -1207,7 +1207,7 @@ export const DescriptionCards = [
     },
     bestPractices: {
       descTitle: "Essential Cybersecurity Best Practices",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/cyber-bestpractices.png"),
       body: {
         introduction:
           "Cybersecurity is critical for protecting sensitive information and systems from cyberattacks. Here are some essential best practices to enhance your overall security posture.",
@@ -1283,7 +1283,7 @@ export const DescriptionCards = [
     },
     projects: {
       descTitle: "Engaging Cybersecurity Projects to Enhance Your Skills",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/cyber-projects.png"),
       body: {
         introduction:
           "The cybersecurity landscape is constantly evolving, demanding a proactive approach and continuous learning. Building projects allows you to solidify theoretical knowledge, experiment with practical applications, and refine critical cybersecurity skills. This document outlines a few engaging project ideas to kickstart your cybersecurity journey.",
