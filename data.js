@@ -24,7 +24,7 @@ export const Cards = [
     img: require("./src/assets/images/unity.png"),
   },
   {
-    title: "Cybersecurity",
+    title: "Cybersec Engineer",
     description: "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks. It's like building a fortress around your information to keep it safe from harm. This includes protecting against things like malware, hackers, and data breaches.",
     img: require("./src/assets/images/cybersecurity.png"),
   },
@@ -1113,7 +1113,7 @@ export const DescriptionCards = [
     },
   },
   {
-    title: "Cybersecurity",
+    title: "Cybersec Engineer",
     fundamentals: {
       descTitle: "Essential Cybersecurity Concepts",
       image: require("./src/assets/images/cyber-fundamentals.png"),
