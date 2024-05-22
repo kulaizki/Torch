@@ -693,7 +693,7 @@ export const DescriptionCards = [
       body: {
         introduction:
           "When working with React, following best practices ensures cleaner, more maintainable code and a smoother development process. Here are some key practices to consider:",
-        subTitle: "Applications and Technologies Powered by JavaScript:",
+        subTitle: "Applications and Technologies Powered by React:",
         practices: [
           {
             subTitle: "1. Component-Based Architecture",
@@ -774,7 +774,7 @@ export const DescriptionCards = [
       },
     },
     projects: {
-      descTitle: "Making Projects in JavaScript",
+      descTitle: "Making Projects in React",
       image: require("./src/assets/images/js.png"),
       body: {
         introduction:
@@ -1192,69 +1192,89 @@ export const DescriptionCards = [
               },
             ],
           },
+          {
+            subTitle: "4. Security Information and Event Management (SIEM)",
+            bullets: [
+              {
+                bTitle: "• SIEM Systems",
+                bBody:
+                  "These systems aggregate security event data from various sources across a network. They analyze the data for anomalies and potential threats, providing security teams with centralized visibility and insights into security incidents.",
+              },
+            ],
+          },
         ],
       },
     },
     bestPractices: {
-      descTitle: "Appropriate Usage of JavaScript (spoiler: there's a lot)",
+      descTitle: "Essential Cybersecurity Best Practices",
       image: require("./src/assets/images/js.png"),
       body: {
         introduction:
-          "JavaScript, as a dynamic and versatile language, offers a lot of flexibility. However, to write clean, efficient, and maintainable code, it's essential to follow best practices. These best practices help in avoiding common pitfalls, enhancing performance, and ensuring code readability and reusability.",
-        subTitle: "Applications and Technologies Powered by JavaScript:",
+          "Cybersecurity is critical for protecting sensitive information and systems from cyberattacks. Here are some essential best practices to enhance your overall security posture.",
+        subTitle: "Fundamental Practices for Robust Security:",
         practices: [
           {
-            subTitle: "1. Use const and let instead of var",
+            subTitle: "1. Keep Software Updated",
             bullets: [
               {
-                bTitle: "• const:",
+                bTitle: "• Patch Management:",
                 bBody:
-                  "Use for variables that are not reassigned after their initial assignment. This ensures immutability and prevents accidental reassignments.",
-              },
-              {
-                bTitle: "• let:",
-                bBody:
-                  "Use for variables that need to be reassigned. It is block-scoped, which reduces the chances of errors related to variable hoisting.",
+                  "Install security updates promptly for operating systems, applications, and firmware. These updates often address newly discovered vulnerabilities that attackers can exploit.",
               },
             ],
           },
           {
-            subTitle: "2. Write Modular and Reusable Code",
+            subTitle: "2. Enforce Strong Authentication",
             bullets: [
               {
-                bTitle: "• Functions and Modules:",
+                bTitle: "• Strong Passwords:",
                 bBody:
-                  "Break your code into smaller, reusable functions and modules. This improves readability and maintainability. For example, you could create utility functions in a separate file and import them as needed.",
+                  "Enforce complex password policies with a minimum character length, including a combination of uppercase and lowercase letters, numbers, and symbols. Encourage regular password changes.",
+              },
+              {
+                bTitle: "• Multi-Factor Authentication (MFA):",
+                bBody:
+                  "Implement MFA for all user logins. This adds an extra layer of security beyond just a password, requiring a secondary factor like a code from a mobile app or a security key.",
               },
             ],
           },
           {
-            subTitle: "3. Use Arrow Functions for Concise Syntax",
+            subTitle: "3. Secure Your Network",
             bullets: [
               {
-                bTitle: "• Arrow Functions:",
+                bTitle: "• Firewalls:",
                 bBody:
-                  "Provide a shorter syntax and lexically bind the this value, which avoids common pitfalls with the this keyword in regular functions. This is especially useful for array operations like map, filter, and reduce.",
+                  "Utilize firewalls to control incoming and outgoing network traffic, blocking access to unauthorized sources.",
+              },
+              {
+                bTitle: "• Intrusion Detection/Prevention Systems (IDS/IPS):",
+                bBody:
+                  "Deploy IDS/IPS systems to monitor network activity for suspicious behavior and potentially block malicious attempts to access your systems.",
+              },
+              {
+                bTitle: "• Network Segmentation:",
+                bBody:
+                  "Segment your network to isolate critical systems and data from less sensitive areas. This minimizes the potential damage if a breach occurs.",
               },
             ],
           },
           {
-            subTitle: "4. Consistent Naming Conventions",
+            subTitle: "4. Protect Your Data",
             bullets: [
               {
-                bTitle: "• camelCase:",
+                bTitle: "• Data Encryption:",
                 bBody:
-                  "Use camelCase for variable and function names to maintain consistency and improve readability. This involves starting with a lowercase letter and capitalizing the first letter of each subsequent word.",
+                  "Encrypt sensitive data at rest (stored on disk) and in transit (transferred over networks) to safeguard it from unauthorized access even if intercepted.",
               },
             ],
           },
           {
-            subTitle: "5. Avoid Global Variables",
+            subTitle: "5. Educate Your Users",
             bullets: [
               {
-                bTitle: "• Encapsulation:",
+                bTitle: "• Security Awareness Training:",
                 bBody:
-                  "Encapsulate your code within functions or modules to avoid polluting the global namespace, which can lead to conflicts and hard-to-debug issues. Using Immediately Invoked Function Expressions (IIFEs) or module patterns can help keep variables scoped appropriately.",
+                  "Provide regular security awareness training to educate employees on cybersecurity best practices, including phishing email identification, secure browsing habits, and reporting suspicious activity.",
               },
             ],
           },
@@ -1262,83 +1282,113 @@ export const DescriptionCards = [
       },
     },
     projects: {
-      descTitle: "Making Projects in JavaScript",
+      descTitle: "Engaging Cybersecurity Projects to Enhance Your Skills",
       image: require("./src/assets/images/js.png"),
       body: {
         introduction:
-          "Creating projects in JavaScript is an excellent way to apply theoretical knowledge, practice coding skills, and build a portfolio. When starting a new JavaScript project, it's important to follow a structured approach:",
+          "The cybersecurity landscape is constantly evolving, demanding a proactive approach and continuous learning. Building projects allows you to solidify theoretical knowledge, experiment with practical applications, and refine critical cybersecurity skills. This document outlines a few engaging project ideas to kickstart your cybersecurity journey.",
         subBullet: [
           {
-            bTitle: "• Define the Project Scope",
+            bTitle: "• Identify Critical Assets",
             bBody:
-              "Clearly outline what the project will do, its features, and its goals. This helps in staying focused and organized.",
+              "Determine the most valuable data and systems requiring protection. This could include financial records, customer information, or internal networks.",
           },
           {
-            bTitle: "• Set Up the Development Environment",
+            bTitle: "• Conduct Risk Assessment",
             bBody:
-              "Ensure you have the necessary tools installed, such as a code editor (e.g., VS Code), Node.js for running JavaScript outside the browser, and version control (e.g., Git).",
+              "Evaluate potential threats and vulnerabilities to your identified assets. Consider common attacks like phishing, malware, and data breaches.",
           },
           {
-            bTitle: "• Plan the Structure",
+            bTitle: "• Implement Security Controls",
             bBody:
-              "Organize your project files and directories. Typically, this includes separating HTML, CSS, and JavaScript files, and setting up a src directory for your source code.",
+              "Put safeguards in place to mitigate risks. This includes firewalls, intrusion detection systems, encryption for sensitive data, and access controls.",
           },
           {
-            bTitle: "• Write and Test Code",
+            bTitle: "• Develop Security Policies",
             bBody:
-              "Start coding based on your project plan. Regularly test your code to catch errors early and ensure everything works as expected.",
+              "Establish clear guidelines for user behavior and system usage. Include password management protocols, data access restrictions, and reporting procedures for suspicious activity.",
           },
           {
-            bTitle: "• Refactor and Document",
+            bTitle: "• Educate & Train Users",
             bBody:
-              "Clean up your code, optimize for performance, and add comments or documentation to explain how your code works.",
+              "Raise awareness about cyber threats and best practices. Train employees on how to identify phishing attempts, avoid malware, and protect sensitive information.",
           },
         ],
 
-        subTitle: "Starting Projects for Beginners",
+        subTitle: "Project Ideas to Sharpen Your Cybersecurity Arsenal:",
         project: [
           {
-            subTitle: "1. To-Do List Application",
+            subTitle: "1. Password Strength Meter (Web Application)",
             bullets: [
               {
                 bTitle: "Description",
                 bBody:
-                  "Create a simple to-do list app where users can add, delete, and mark tasks as completed. This project helps beginners understand DOM manipulation, event handling, and basic CRUD (Create, Read, Update, Delete) operations.",
+                  "Create a web application that analyzes a user's password and provides real-time feedback on its strength. Consider factors like minimum length, character types (uppercase, lowercase, numbers, symbols), and dictionary checks to determine password complexity.",
               },
               {
                 bTitle: "Key Learning Points",
                 bBody:
-                  "HTML form handling, JavaScript functions and event listeners, local storage for persisting data.",
+                  "Understanding password complexity requirements, string manipulation techniques, and potentially integrating with libraries for password strength checks.",
               },
             ],
           },
           {
-            subTitle: "2. Calculator",
+            subTitle: "2. Secure Note Taking App (Mobile or Web)",
             bullets: [
               {
                 bTitle: "Description",
                 bBody:
-                  "Build a basic calculator that performs arithmetic operations like addition, subtraction, multiplication, and division. This project is great for practicing user input handling and implementing basic algorithms.",
+                  "Develop a mobile or web application where users can store sensitive notes in an encrypted format. Implement features like user authentication with strong password requirements and encryption/decryption of notes using libraries or frameworks that support secure data handling.",
               },
               {
                 bTitle: "Key Learning Points",
                 bBody:
-                  "Handling user input, performing calculations, updating the DOM to display results.",
+                  "User authentication with password hashing, client-side or server-side encryption/decryption (depending on chosen approach), secure storage of user data using appropriate mechanisms.",
               },
             ],
           },
           {
-            subTitle: "3. Weather App",
+            subTitle: "3. Web Vulnerability Scanner (Desktop Tool)",
             bullets: [
               {
                 bTitle: "Description",
                 bBody:
-                  "Develop a weather application that fetches and displays weather data for a specified location using a public API like OpenWeatherMap. This project introduces working with APIs, JSON, and asynchronous JavaScript (promises or async/await).",
+                  "Build a basic desktop tool that scans websites for common vulnerabilities like broken authentication, cross-site scripting (XSS), and SQL injection. This project requires research on different vulnerability types and potentially using existing libraries for basic checks. Remember to prioritize ethical considerations and avoid exploiting vulnerabilities on live websites without permission.",
               },
               {
                 bTitle: "Key Learning Points",
                 bBody:
-                  "Fetch API for making network requests, handling JSON data, displaying dynamic content.",
+                  "Understanding common web vulnerabilities, exploring web scraping techniques with libraries or frameworks, learning about secure coding practices to prevent vulnerabilities in your own projects.",
+              },
+            ],
+          },
+          {
+            subTitle: "4. Network Traffic Analyzer (Desktop Tool)",
+            bullets: [
+              {
+                bTitle: "Description:",
+                bBody:
+                  "Develop a desktop tool that captures and analyzes network traffic flowing through your computer. It could display information like source and destination IP addresses, port numbers and protocols used, and potential identification of suspicious network activity based on pre-defined rules or traffic patterns.",
+              },
+              {
+                bTitle: "Key Learning Points:",
+                bBody:
+                  "Gain experience with network protocols, understand the basics of network traffic analysis, and learn about identifying potential network threats based on network traffic characteristics.",
+              },
+            ],
+          },
+          {
+            subTitle: "5. Open-Source Security Contribution",
+            bullets: [
+              {
+                bTitle: "Description:",
+                bBody:
+                  "Identify an open-source security tool or project that interests you. Explore its documentation and contribute in ways you can: reporting bugs and suggesting improvements, writing documentation or tutorials, contributing code fixes or enhancements to improve the tool's functionality.",
+              },
+              {
+                bTitle: "Key Learning Points:",
+                bBody:
+                  "Gain exposure to real-world security tools, learn from experienced developers, and contribute meaningfully to the cybersecurity community by giving back to open-source projects.",
               },
             ],
           },
