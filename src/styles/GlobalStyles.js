@@ -26,5 +26,6 @@ export const GlobalStyles = StyleSheet.create({
     width: "100%",
     flex: 1,
     resizeMode: "contain",
+    height: 200,
   },
 });

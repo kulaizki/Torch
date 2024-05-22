@@ -337,7 +337,7 @@ export const DescriptionCards = [
     },
     technology: {
       descTitle: "Technologies and Applications of Python",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/python.png"),
       body: {
         introduction:
           "Python has become a pivotal language in the software development landscape due to its simplicity, versatility, and robust ecosystem of libraries and frameworks. It has enabled the creation of diverse applications and technologies, facilitating advancements in numerous fields such as web development, data science, artificial intelligence, and more. Python's intuitive syntax and extensive standard library make it a preferred choice for both beginners and experienced developers.",
@@ -408,7 +408,7 @@ export const DescriptionCards = [
     },
     bestPractices: {
       descTitle: "Best Practices of Python",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/python.png"),
       body: {
         introduction:
           "Adhering to best practices while using Python ensures that your code is clean, efficient, and maintainable. These practices help in improving readability, reducing errors, and making collaboration easier.",

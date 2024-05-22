@@ -58,4 +58,8 @@ const styles = {
     flex: 1,
     resizeMode: "contain",
   },
+  articleImage: {
+    width: "100%",
+    resizeMode: "contain",
+  },
 };
