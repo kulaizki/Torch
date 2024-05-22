@@ -57,7 +57,7 @@ export const DescriptionCards = [
     title: "JavaScript Developer",
     fundamentals: {
       descTitle: "Fundamentals in Javascript",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/js-fundamentals.png"),
       body: {
         introduction:
           "JavaScript is a versatile and widely-used programming language that is fundamental to modern web development. Understanding the core concepts of JavaScript is essential for creating dynamic and interactive web applications. Here are the three most important fundamentals of JavaScript:",
@@ -82,7 +82,7 @@ export const DescriptionCards = [
     },
     technology: {
       descTitle: "Technologies and Extensions of JavaScript",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/js-technology.png"),
       body: {
         introduction:
           "JavaScript is a foundational technology in modern web development, enabling the creation of dynamic, interactive user interfaces and applications. Its versatility and ubiquity have made it integral to both client-side and server-side development, leading to the emergence of numerous frameworks and libraries that enhance its functionality. JavaScript has significantly influenced the development of single-page applications (SPAs), real-time applications, and cross-platform mobile apps, among others.",
@@ -148,7 +148,7 @@ export const DescriptionCards = [
     },
     bestPractices: {
       descTitle: "Appropriate Usage of JavaScript (spoiler: there's a lot)",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/js-bestpractices.png"),
       body: {
         introduction:
           "JavaScript, as a dynamic and versatile language, offers a lot of flexibility. However, to write clean, efficient, and maintainable code, it's essential to follow best practices. These best practices help in avoiding common pitfalls, enhancing performance, and ensuring code readability and reusability.",
@@ -214,7 +214,7 @@ export const DescriptionCards = [
     },
     projects: {
       descTitle: "Making Projects in JavaScript",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/js-projects.png"),
       body: {
         introduction:
           "Creating projects in JavaScript is an excellent way to apply theoretical knowledge, practice coding skills, and build a portfolio. When starting a new JavaScript project, it's important to follow a structured approach:",
@@ -302,7 +302,7 @@ export const DescriptionCards = [
     title: "Python Developer",
     fundamentals: {
       descTitle: "Fundamentals in Python",
-      image: require("./src/assets/images/python.png"),
+      image: require("./src/assets/images/py-fundamentals.png"),
       body: {
         introduction:
           "Python is a versatile and beginner-friendly programming language known for its readability and efficiency. It is widely used in various fields such as web development, data analysis, artificial intelligence, and more. Understanding the fundamentals of Python is crucial for anyone looking to leverage its power effectively. Here are some of the most important fundamentals:",
@@ -337,7 +337,7 @@ export const DescriptionCards = [
     },
     technology: {
       descTitle: "Technologies and Applications of Python",
-      image: require("./src/assets/images/python.png"),
+      image: require("./src/assets/images/py-technology.png"),
       body: {
         introduction:
           "Python has become a pivotal language in the software development landscape due to its simplicity, versatility, and robust ecosystem of libraries and frameworks. It has enabled the creation of diverse applications and technologies, facilitating advancements in numerous fields such as web development, data science, artificial intelligence, and more. Python's intuitive syntax and extensive standard library make it a preferred choice for both beginners and experienced developers.",
@@ -408,7 +408,7 @@ export const DescriptionCards = [
     },
     bestPractices: {
       descTitle: "Best Practices of Python",
-      image: require("./src/assets/images/python.png"),
+      image: require("./src/assets/images/py-bestpractices.png"),
       body: {
         introduction:
           "Adhering to best practices while using Python ensures that your code is clean, efficient, and maintainable. These practices help in improving readability, reducing errors, and making collaboration easier.",
@@ -494,7 +494,7 @@ export const DescriptionCards = [
     },
     projects: {
       descTitle: "Making Your Own Python Projects",
-      image: require("./src/assets/images/python.png"),
+      image: require("./src/assets/images/py-projects.png"),
       body: {
         introduction:
           "Before diving into a Python project, it's essential to lay a strong foundation and plan ahead. Here are some important steps to take before starting:",
@@ -583,7 +583,7 @@ export const DescriptionCards = [
     title: "React Developer",
     fundamentals: {
       descTitle: "Fundamentals in React",
-      image: require("./src/assets/images/react.webp"),
+      image: require("./src/assets/images/react-fundamentals.png"),
       body: {
         introduction:
           "React is a popular JavaScript library for building user interfaces, developed by Facebook. Understanding the fundamentals of React is essential for developing efficient and maintainable web applications. Here are some of the most important fundamentals:",
@@ -618,7 +618,7 @@ export const DescriptionCards = [
     },
     technology: {
       descTitle: "Usages of React",
-      image: require("./src/assets/images/react.webp"),
+      image: require("./src/assets/images/react-technology.png"),
       body: {
         introduction:
           "React has significantly impacted web development by enabling the creation of dynamic and interactive user interfaces. Here are three primary uses of React along with examples:",
@@ -689,7 +689,7 @@ export const DescriptionCards = [
     },
     bestPractices: {
       descTitle: "Best Practices of React",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/react-bestpractices.png"),
       body: {
         introduction:
           "When working with React, following best practices ensures cleaner, more maintainable code and a smoother development process. Here are some key practices to consider:",
@@ -775,7 +775,7 @@ export const DescriptionCards = [
     },
     projects: {
       descTitle: "Making Projects in React",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/react-projects.png"),
       body: {
         introduction:
           "Building projects in React is a fantastic way to solidify your understanding of React concepts, sharpen your coding skills, and showcase your abilities with a portfolio. It's crucial to follow a well-structured approach when embarking on a new React project:",
@@ -862,7 +862,7 @@ export const DescriptionCards = [
     title: "Game Developer",
     fundamentals: {
       descTitle: "Game Development Fundamentals",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/game-fundamentals.png"),
       body: {
         introduction:
           "The world of game development is vast and exciting! To embark on your journey as a game developer, a solid foundation in core concepts is essential. Here are three fundamental areas to focus on:",
@@ -887,7 +887,7 @@ export const DescriptionCards = [
     },
     technology: {
       descTitle: "Technologies and Tools for Game Development",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/game-technology.png"),
       body: {
         introduction:
           "The landscape of game development is brimming with powerful technologies and tools that empower creators to bring their visions to life. Here's an exploration of some prominent areas to consider:",
@@ -958,7 +958,7 @@ export const DescriptionCards = [
     },
     bestPractices: {
       descTitle: "Best Practices for Game Development",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/game-bestpractices.png"),
       body: {
         introduction:
           "The game development process can be streamlined and optimized by following established best practices. These practices promote clean, maintainable, and efficient code, while fostering a smooth development workflow. Here are some key areas to consider:",
@@ -1029,7 +1029,7 @@ export const DescriptionCards = [
     },
     projects: {
       descTitle: "Creating Game Development Projects",
-      image: require("./src/assets/images/js.png"),
+      image: require("./src/assets/images/game-projects.png"),
       body: {
         introduction:
           "Building game development projects is a fantastic way to solidify your understanding of core concepts, experiment with mechanics, and showcase your skills. Here's a breakdown of the typical project development process:",
