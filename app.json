@@ -4,10 +4,10 @@
     "slug": "Torch",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/torch-logo.png",
+    "icon": "./src/assets/images/torch-logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/torch-logo.png",
+      "image": "./src/assets/images/torch-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,17 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.reecelim.Torch"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "75aa4e9f-17c1-4ef9-bb47-55de21e1c9d7"
+      }
     }
   }
 }
